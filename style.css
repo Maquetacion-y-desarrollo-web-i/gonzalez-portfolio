@@ -1,0 +1,72 @@
+.saira-var {
+  font-family: "Saira", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.sarpanch-regular {
+  font-family: "Sarpanch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.sarpanch-medium {
+  font-family: "Sarpanch", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.sarpanch-semibold {
+  font-family: "Sarpanch", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.sarpanch-bold {
+  font-family: "Sarpanch", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.sarpanch-extrabold {
+  font-family: "Sarpanch", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+.sarpanch-black {
+  font-family: "Sarpanch", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+body {
+    background-color: #080016;
+    color: #CECECE;
+    font-family: sair
+}
+
+#logo {
+    display: flex;
+    flex-direction: row;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#about .container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+li {
+    list-style-image: url(./imgs/ListGreenSquare.svg);
+    list-style-type: square;
+}
+
+#projects .container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
