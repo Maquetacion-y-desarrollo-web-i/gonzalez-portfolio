@@ -1,0 +1,43 @@
+@font-face {
+    font-family: sai;
+    src: url("./fonts/Saira.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: sai-it;
+    src: url("./fonts/Saira-Italic.woff2") format('woff2');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+
+
+@font-face {
+    font-family: sarp0;
+    src: url("./fonts/Sarpanch-Regular.woff2") format('woff2');
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: sarp1;
+    src: url("./fonts/Sarpanch-ExtraBold.woff2") format('woff2');
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: sarp2;
+    src: url("./fonts/Sarpanch-SemiBold.woff2") format('woff2');
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: sarp3;
+    src: url("./fonts/Sarpanch-Regular.woff2") format('woff2');
+    font-style: normal;
+    font-display: swap;
+    font-weight: 600;
+}
