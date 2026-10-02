@@ -1,3 +1,5 @@
+/*los colores de fondo de las secciones son temporales, solo por fines de testeo*/
+
 body {
   background-color: #080016;
   color: #CECECE;
@@ -7,15 +9,28 @@ p {
   font-family: sai;
 }
 h1 {
-  font-family: sarp0;
+  font-family: sarp2;
+  color: #03ED02;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  font-size: 400%;
 }
 h2 {
-  font-family: sarp1;
+  font-family: sarp0;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    background-color: #1a073a;
 }
 
 #logo {
   display: flex;
   flex-direction: row;
+}
+header img {
+  padding: 10px 0 0 10px;
 }
 
 nav {
@@ -24,7 +39,10 @@ nav {
   justify-content: space-around;
 }
 
-#about .container {
+#skills {
+  background-color: #5e3c99;
+}
+#skills .container {
   display: grid;
   grid-template-columns: auto auto;
 }
@@ -33,6 +51,14 @@ li {
   list-style-image: url(./imgs/ListGreenSquare.svg);
   list-style-type: square;
 }
+
+a {
+  color: #DA1393;
+}
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:focus { text-decoration: none; }
+a:hover, a:active { text-decoration: none; }
 
 #projects .container {
   display: grid;
