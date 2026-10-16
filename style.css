@@ -4,39 +4,81 @@ body {
   background-color: #080016;
   color: #CECECE;
 }
-
+main{
+  padding: 0 0.5em 0 0.5em;
+}
 p {
   font-family: sai;
 }
 h1 {
-  font-family: sarp2;
-  color: #03ED02;
-  margin: 0 0 0 0;
-  padding: 0 0 0 0;
-  font-size: 400%;
-}
-h2 {
   font-family: sarp0;
+}
+li {
+  list-style-image: url(./imgs/ListGreenSquare.svg);
+  list-style-type: square;
+}
+a {
+  color: #DA1393;
 }
 
 header{
-    position: sticky;
-    top: 0;
-    background-color: #1a073a;
-}
-
-#logo {
+  position: sticky;
+  top: 0;
+  background-color: #080016;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 1em 0 1em;
+
+  border-width: 0 0 1px 0;
+  border-color: #7C2E6250;
+  border-style: solid;
+}
+#logo {
+  margin-right: 2em;
 }
 header img {
-  padding: 10px 0 0 10px;
+  size: 100%;
 }
 
 nav {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 3em;
+  margin: 0 0.5em 0 0.5em;
+}
+nav a {
+  text-decoration: none;
+}
+nav p {
+  font-size: 1.5em;
+}
+.lang-sel {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  gap: 0.7em;
+}
+
+#hello {
+  scroll-margin-top: 5px;
+  padding: 0 0.5em 0 0.5em;
+
+  border-width: 0 0 0 15px;
+  border-style: dashed;
+  border-color: #03ED02;
+}
+#skills, #projects {
+  scroll-margin-top: 94px;
+  padding: 0 0.5em 0 0.5em;
+
+
+  border-style: dashed;
+  border-color: #03ED02;
+  border-image-source: url('/imgs/BorderGreenSquare.svg');
+  border-width: 0 0 0 10px;
+  border-image-slice: 33%;
+  border-image-repeat: round;
 }
 
 #skills {
@@ -47,20 +89,8 @@ nav {
   grid-template-columns: auto auto;
 }
 
-li {
-  list-style-image: url(./imgs/ListGreenSquare.svg);
-  list-style-type: square;
-}
-
-a {
-  color: #DA1393;
-}
-a:visited { text-decoration: none; }
-a:hover { text-decoration: none; }
-a:focus { text-decoration: none; }
-a:hover, a:active { text-decoration: none; }
-
 #projects .container {
   display: grid;
   grid-template-columns: auto auto auto;
+  gap: 2em;
 }
