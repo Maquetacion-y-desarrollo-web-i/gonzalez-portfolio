@@ -5,13 +5,16 @@ body {
   color: #CECECE;
 }
 main{
-  padding: 0 0.5em 0 0.5em;
+  padding: 0 2em 0 2em;
+  display: flex;
+  flex-direction: column;
 }
 p {
   font-family: sai;
 }
 h1 {
   font-family: sarp0;
+  margin: 0
 }
 li {
   list-style-image: url(./imgs/ListGreenSquare.svg);
@@ -19,6 +22,9 @@ li {
 }
 a {
   color: #DA1393;
+}
+a:hover {
+  color: #ff4fc1;
 }
 
 header{
@@ -36,7 +42,7 @@ header{
   border-style: solid;
 }
 #logo {
-  margin-right: 2em;
+  margin-right: 1em;
 }
 header img {
   size: 100%;
@@ -52,7 +58,7 @@ nav a {
   text-decoration: none;
 }
 nav p {
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 .lang-sel {
   display: flex;
@@ -61,36 +67,64 @@ nav p {
 }
 
 #hello {
+  background-color: #080016;
   scroll-margin-top: 5px;
   padding: 0 0.5em 0 0.5em;
+  margin: 0.5em 0 2em 0;
 
-  border-width: 0 0 0 15px;
-  border-style: dashed;
-  border-color: #03ED02;
+  border: 0 0 1.3em 1.3em dashed #03ED02;
+  border-image-source: url(/imgs/BorderGreenSquare.svg);
+  border-image-slice: 33%;
+  border-image-width: 0 0 0 1em;
+  border-image-repeat: round;
+  border-image-outset: 0.5em 0 0 1.5em;
 }
-#skills, #projects {
+#skills {
+  background-color: #080016;
   scroll-margin-top: 94px;
   padding: 0 0.5em 0 0.5em;
+  margin: 0 0 2em 0;
 
-
-  border-style: dashed;
-  border-color: #03ED02;
-  border-image-source: url('/imgs/BorderGreenSquare.svg');
-  border-width: 0 0 0 10px;
+  border: 0 0 1.3em 1.3em dashed #03ED02;
+  border-image-source: url(/imgs/BorderGreenSquare.svg);
   border-image-slice: 33%;
+  border-image-width: 1em 1em 1em 0;
+  border-image-repeat: space;
+  border-image-outset: 1.9em 1.5em 1.5em 1.55em;
+}
+#projects {
+  background-color: #080016;
+  scroll-margin-top: 94px;
+  padding: 0 0.5em 0 0.5em;
+  margin: 0 0 2em 0;
+
+  border: 0 0 1.3em 1.3em dashed #03ED02;
+  border-image-source: url(/imgs/BorderGreenSquare.svg);
+  border-image-slice: 33%;
+  border-image-width: 0 0 1em 1em;
   border-image-repeat: round;
+  border-image-outset: 0.45em 2.5em 1.5em 1.5em;
 }
 
-#skills {
-  background-color: #5e3c99;
-}
 #skills .container {
   display: grid;
   grid-template-columns: auto auto;
 }
-
 #projects .container {
   display: grid;
   grid-template-columns: auto auto auto;
   gap: 2em;
+}
+
+
+@media (max-width: 1250px) {
+  header{
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 750px) {
+  main {
+    background-color: aqua;
+  }
 }
